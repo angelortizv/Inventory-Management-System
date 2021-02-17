@@ -1,0 +1,55 @@
+<div class="row">
+  <div *ngFor="let data of dataDisplay" class="col-lg-3 mt-3 mb-3">
+    <div class="card card-stats">
+      <div class="card-header ">
+        <div class="stats">
+          <i class="fa fa-window-maximize"></i> {{data.item}}
+        </div>
+        <hr>
+      </div>
+      <div class="card-body ">
+        <div class="row">
+          <div class="col-5 col-md-4">
+              <img src="{{data.image}}">
+          </div>
+          <div class="col-7 col-md-8">
+            <div class="numbers">
+              <p class="card-category">Precio</p>
+              <p class="card-title">{{data.price}}<p>
+              <p class="card-category">Cantidad</p>
+              <p class="card-title">{{data.quantity}}<p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer ">
+        <hr>
+        <div class="stats">
+          <a href=""> <i class="fa fa-info"></i> Más Información</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--<div class="container mt-5">
+  <h4>Items</h4>
+
+  <div class="row">
+    <div *ngFor="let data of dataDisplay" class="col-lg-3 mt-3 mb-3">
+      <div class="card">
+        <div class="card-header">
+          <small class="text-muted">{{data.item}}</small>
+        </div>
+        <img class="card-img-top" src="{{ data.image }}" height="200px" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Precio del articulo: {{data.price}}</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Cantidad Disponible: {{data.quantity}}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
