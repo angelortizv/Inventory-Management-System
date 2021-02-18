@@ -15,6 +15,7 @@ export class NavbarComponent implements OnInit{
     private nativeElement: Node;
     private toggleButton;
     private sidebarVisible: boolean;
+    public currentCategory;
 
     public isCollapsed = true;
     @ViewChild("navbar-cmp", {static: false}) button;
@@ -32,6 +33,7 @@ export class NavbarComponent implements OnInit{
         this.router.events.subscribe((event) => {
           this.sidebarClose();
        });
+       this.currentCategory = localStorage.getItem('productCategory');
     }
     getTitle(){
       var titlee = this.location.prepareExternalUrl(this.location.path());
