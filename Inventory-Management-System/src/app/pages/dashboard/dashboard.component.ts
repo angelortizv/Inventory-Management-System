@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
@@ -22,9 +23,10 @@ export class DashboardComponent implements OnInit{
 
 
   public currentCategory = localStorage.getItem('productCategory');
+  public currentProduct = [];
   public dataDisplay:any = [];
 
-  constructor(private _http: HttpClient) { }
+  constructor(private _http: HttpClient, private modal:NgbModal) { }
 
   ngOnInit(): void {
     this.getJSON().subscribe((result)=> {
@@ -56,7 +58,16 @@ export class DashboardComponent implements OnInit{
       default:
         return this._http.get(this._jsonURL);
     }
-
   }
+
+  private openModal(content){
+    this.modal.open(content, {size:'lg', centered:true})
+  }
+
+  public setCurrentProduct(data){
+    this.currentProduct = data;
+    //console.log(this.currentProduct);
+  }
+
 
 }
