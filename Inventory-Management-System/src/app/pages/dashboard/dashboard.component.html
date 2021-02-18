@@ -1,0 +1,90 @@
+<div class="row">
+  <div *ngFor="let data of dataDisplay" class="col-lg-3 mt-3 mb-3">
+    <div class="card card-stats">
+      <div class="card-header ">
+        <div class="stats ">
+          <!--<i class="fa fa-window-maximize"></i>--> {{data.item}}
+        </div>
+        <hr>
+      </div>
+      <div class="card-body ">
+        <div class="row">
+          <div class="col-5 col-md-4">
+              <img src="{{data.image}}">
+          </div>
+          <div class="col-7 col-md-8">
+            <div class="numbers">
+              <p class="card-category">Precio</p>
+              <p class="card-title">{{data.price}}<p>
+              <p class="card-category">Cantidad</p>
+              <p class="card-title">{{data.quantity}}<p>
+            </div>
+          </div>
+          <p style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 0;">Categoría: {{data.category}}</p>
+        </div>
+      </div>
+      <div class="card-footer ">
+        <hr>
+        <div class="stats">
+          <a (click)="setCurrentProduct(data)"
+             (click)="openModal(showProductInfo)"> <i class="fa fa-info"></i> Más Información</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #showProductInfo let-modal>
+  <div class="modal-body" >
+    <div class="card card-user">
+      <div class="image">
+        <img src="assets/img/banner.png" alt="currentProduct Banner">
+      </div>
+      <div class="card-body">
+        <div class="author">
+          <a href="#">
+            <img class="image border-gray" src="{{currentProduct.image}}" alt="currentProduct Image">
+            <h5 class="title">{{currentProduct.item}}</h5>
+          </a>
+          <p class=" text-center">
+            Categoría: <b>{{currentProduct.category}}</b> <br>
+            Subcategoría: <b>{{currentProduct.subCategory}}</b>
+          </p>
+          <p class="">
+            {{currentProduct.description}}
+          </p>
+        </div>
+        <p class=" text-center">
+          Fabricante: <b><a href="{{currentProduct.producerInfo}}" target="_blank">{{currentProduct.producer}}</a></b>
+        </p>
+      </div>
+      <div class="card-footer">
+        <hr>
+        <div class="button-container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-6 ml-auto">
+              <h5><b>{{currentProduct.quantity}}</b>
+                <br>
+                <small>Cantidad</small>
+              </h5>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
+              <h5><b>{{currentProduct.price}}</b>
+                <br>
+                <small>Precio</small>
+              </h5>
+            </div>
+            <div class="col-lg-3 mr-auto">
+              <h5><b>{{currentProduct.availability}}</b>
+                <br>
+                <small>Disponibilidad</small>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ng-template>

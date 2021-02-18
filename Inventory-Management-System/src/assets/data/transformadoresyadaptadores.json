@@ -1,0 +1,15 @@
+[
+  {
+    "id": "TATRANS001",
+    "category": "Transformadores y Adaptadores",
+    "subCategory": "Transformador",
+    "item": "Transformador Miyako 110VAC 12+12VAC @ 4A",
+    "producer": "N/A",
+    "producerInfo": "N/A",
+    "quantity": 4,
+    "availability": "En existencia",
+    "price": "₡15,000.00",
+    "description": "Este es un transformador de voltaje robusto. Puede suministrar 24VAC rms y hasta 4 Amperios, con una potencia de 110V a 125VAC (red utilizada en nuestro país) que puede conectar al bobinado primario, obtendrá en el bobinado secundario 24VAC rms, el secundario tiene una derivación central (cable negro del centro), por lo que puede obtener 2 fuentes de 12VAC.",
+    "image": "https://microjpm.com/_files/system_preview_200002121-9272b936a7/LP-57X%20TRANSFORMER.jpg"
+  }
+]

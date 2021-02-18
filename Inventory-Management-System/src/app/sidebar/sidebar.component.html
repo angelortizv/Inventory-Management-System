@@ -1,0 +1,26 @@
+
+<div class="sidebar-wrapper">
+  <div class="logo">
+    <a href="http://www.electroservicios369.com" target="_blank" class="simple-text logo-normal">
+      <div class="logo-image-small">
+        <img src="assets/img/logo.png">
+      </div>
+    </a>
+  </div>
+    <ul class="nav">
+        <li *ngFor="let menuItem of menuItems"  class="{{menuItem.class}}">
+            <!--<a [routerLink]="[menuItem.path]">-->
+              <a [routerLink]="[menuItem.path]" (click)="setCategory(menuItem.title)">
+                <!--<i class="nc-icon {{menuItem.icon}}"></i>-->
+                <p>{{menuItem.title}}</p>
+            </a>
+        </li>
+    </ul>
+    <div style="position: absolute; bottom: 10px; margin-left: 15px;">
+      <p>
+        <a href="http://www.electroservicios369.com" target="_blank"><b>Electro Servicios 369 S.A.</b></a> <br>
+      Inventory Management System <br>
+      v1.0.0
+      </p>
+    </div>
+</div>
