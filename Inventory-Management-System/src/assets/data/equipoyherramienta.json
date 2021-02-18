@@ -1,0 +1,54 @@
+[
+  {
+    "id": "EHSOLD001",
+    "category": "Equipo y Herramienta",
+    "subCategory": "Soldadura",
+    "item": "Stand para Cautín Miyako",
+    "producer": "Miyako",
+    "producerInfo": "http://www.miyakocatalog.com/product-category/miyako-usa/soldering/",
+    "quantity": 2,
+    "availability": "En existencia",
+    "price": "₡4,500.00",
+    "description": "Este es un simple soporte soldador compuesto por una base metálica de alta resistencia y un soporte de muelle reforzado. La base y el soporte son desmontables. Una esponja de limpieza cuadrada, que tiene un lugar agradable en la parte inferior de la base, está incluido.",
+    "image": "https://microjpm.com/_files/system_preview_200003183-54c2856b48/HH-2%20soldering%20stand.jpg"
+  },
+  {
+    "id": "EHSOLD002",
+    "category": "Equipo y Herramienta",
+    "subCategory": "Soldadura",
+    "item": "Bomba desoldadora de alto vacío",
+    "producer": "Miyako",
+    "producerInfo": "http://www.miyakocatalog.com/product-category/miyako-usa/soldering/",
+    "quantity": 1,
+    "availability": "En existencia",
+    "price": "₡3,500.00",
+    "description": "Bomba desoldadora de alto vacío",
+    "image": "http://www.miyakocatalog.com/wp-content/uploads/2018/01/NBW-74M.jpg"
+  },
+  {
+    "id": "EHKIT001",
+    "category": "Equipo y Herramienta",
+    "subCategory": "Herramienta",
+    "item": "KIT 1 - PEQUEÑO",
+    "producer": "ANBES",
+    "producerInfo": "https://www.anbes.com/?id=429",
+    "quantity": 1,
+    "availability": "En existencia",
+    "price": "₡30,000.00",
+    "description": "Equipo electrónico para soldador Anbes, herramienta de soldadura de temperatura ajustable de 60 W, puntas de soldadura de 5 piezas, bomba para desoldar, soporte para cautín, pinzas",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71VjUZRpFJL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "EHKIT002",
+    "category": "Equipo y Herramienta",
+    "subCategory": "Herramienta",
+    "item": "KIT 2 - GRANDE",
+    "producer": "ANBES",
+    "producerInfo": "https://www.anbes.com/?id=429",
+    "quantity": 1,
+    "availability": "En existencia",
+    "price": "₡55,000.00",
+    "description": "Equipo electrónico para soldador Anbes, herramienta de soldadura de temperatura ajustable de 60 W, puntas de soldadura de 5 piezas, bomba para desoldar, soporte para cautín, pinzas",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71VjUZRpFJL._AC_SL1500_.jpg"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "DO001",
+    "category": "Dispositivos Opticos",
+    "subCategory": "LED",
+    "item": "LED Azul 5mm Difuso",
+    "producer": "Sparkfun",
+    "producerInfo": "sparkfun.com/products/11372",
+    "quantity": 200,
+    "availability": "En existencia",
+    "price": "₡80.00",
+    "description": "LED: esas cosas que parpadean. Imprescindible para indicación de potencia, estado de pines, sensores optoelectrónicos y divertidas pantallas parpadeantes. Este es un LED de 5 mm muy básico con una lente azul. Tiene un voltaje directo típico de 3,4 V y una corriente directa nominal de 30 mA.",
+    "image": "https://microjpm.com/_files/system_preview_200002981-2b3cd2c37f/11372-01b.jpg"
+  },
+  {
+    "id": "DO002",
+    "category": "Dispositivos Opticos",
+    "subCategory": "LED",
+    "item": "LED Rojo 5mm Difuso",
+    "producer": "Sparkfun",
+    "producerInfo": "sparkfun.com/products/11373",
+    "quantity": 200,
+    "availability": "En existencia",
+    "price": "₡80.00",
+    "description": "LED: esas cosas que parpadean. Imprescindible para indicación de potencia, estado de pines, sensores optoelectrónicos y divertidas pantallas parpadeantes. Este es un LED de 5 mm muy básico con una lente azul. Tiene un voltaje directo típico de 3,4 V y una corriente directa nominal de 30 mA.",
+    "image": "https://microjpm.com/_files/system_preview_200003172-b17bab274e/led%20rojo%20difuso%205mm.jpg"
+  },
+  {
+    "id": "DO003",
+    "category": "Dispositivos Opticos",
+    "subCategory": "LED",
+    "item": "LED Amarillo 5mm Difuso",
+    "producer": "Sparkfun",
+    "producerInfo": "sparkfun.com/products/11374",
+    "quantity": 200,
+    "availability": "En existencia",
+    "price": "₡80.00",
+    "description": "LED: esas cosas que parpadean. Imprescindible para indicación de potencia, estado de pines, sensores optoelectrónicos y divertidas pantallas parpadeantes. Este es un LED de 5 mm muy básico con una lente azul. Tiene un voltaje directo típico de 3,4 V y una corriente directa nominal de 30 mA.",
+    "image": "https://microjpm.com/_files/system_preview_200004215-c854cc950e/09594_01.jpg"
+  },
+  {
+    "id": "DO004",
+    "category": "Dispositivos Opticos",
+    "subCategory": "LED",
+    "item": "LED Verde 5mm Difuso",
+    "producer": "Sparkfun",
+    "producerInfo": "sparkfun.com/products/11375",
+    "quantity": 200,
+    "availability": "En existencia",
+    "price": "₡80.00",
+    "description": "LED: esas cosas que parpadean. Imprescindible para indicación de potencia, estado de pines, sensores optoelectrónicos y divertidas pantallas parpadeantes. Este es un LED de 5 mm muy básico con una lente azul. Tiene un voltaje directo típico de 3,4 V y una corriente directa nominal de 30 mA.",
+    "image": "https://microjpm.com/_files/system_preview_200003386-413f34239c/LED%20DIFUSO%20VERDE%205MM.jpg"
+  },
+  {
+    "id": "DO005",
+    "category": "Dispositivos Opticos",
+    "subCategory": "LED",
+    "item": "LED Blanco 5mm Difuso",
+    "producer": "Sparkfun",
+    "producerInfo": "sparkfun.com/products/11376",
+    "quantity": 200,
+    "availability": "En existencia",
+    "price": "₡80.00",
+    "description": "LED: esas cosas que parpadean. Imprescindible para indicación de potencia, estado de pines, sensores optoelectrónicos y divertidas pantallas parpadeantes. Este es un LED de 5 mm muy básico con una lente azul. Tiene un voltaje directo típico de 3,4 V y una corriente directa nominal de 30 mA.",
+    "image": "https://microjpm.com/_files/system_preview_200003173-7eb4f7faf1/led%20blanco%20difuso%205mm.jpg"
+  }
+]
