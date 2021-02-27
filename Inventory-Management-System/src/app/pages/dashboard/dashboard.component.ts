@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { CommunicationService } from 'app/communication/communication.service';
 
 
 @Component({
@@ -12,21 +13,12 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 export class DashboardComponent implements OnInit{
 
-  private _jsonURL = 'assets/data/csvjson.json';
-  private _CAT001 = 'assets/data/pcbsbreadboard.json';
-  private _CAT002 = 'assets/data/conectoresyterminales.json'
-  private _CAT003 = 'assets/data/dispositivosopticos.json'
-  private _CAT004 = 'assets/data/semiconductores.json'
-  private _CAT005 = 'assets/data/componentespasivos.json'
-  private _CAT006 = 'assets/data/transformadoresyadaptadores.json'
-  private _CAT007 = 'assets/data/equipoyherramienta.json'
-
 
   public currentCategory = localStorage.getItem('productCategory');
   public currentProduct = [];
   public dataDisplay:any = [];
 
-  constructor(private _http: HttpClient, private modal:NgbModal) { }
+  constructor(private CS: CommunicationService, private modal:NgbModal) { }
 
   ngOnInit(): void {
     this.getJSON().subscribe((result)=> {
@@ -40,23 +32,23 @@ export class DashboardComponent implements OnInit{
   public getJSON(): Observable<any> {
     switch (this.currentCategory) {
       case 'Todos los elementos':
-        return this._http.get(this._jsonURL);
+        return this.CS.getAllData();
       case 'PCB´s y Breadboard':
-        return this._http.get(this._CAT001);
+        return this.CS.getCat001();
       case 'Conectores y Terminales':
-        return this._http.get(this._CAT002);
+        return this.CS.getCat002();
       case 'Dispositivos Opticos':
-        return this._http.get(this._CAT003);
+        return this.CS.getCat003();
       case 'Semiconductores':
-        return this._http.get(this._CAT004);
+        return this.CS.getCat004();
       case 'Componentes Pasivos':
-        return this._http.get(this._CAT005);
+        return this.CS.getCat005();
       case 'Transformadores y Adaptadores':
-        return this._http.get(this._CAT006);
+        return this.CS.getCat006();
       case 'Equipo y Herramienta':
-        return this._http.get(this._CAT007);
+        return this.CS.getCat007();
       default:
-        return this._http.get(this._jsonURL);
+        return this.CS.getAllData();
     }
   }
 
